@@ -8,7 +8,20 @@ header {
 		@include container($tablet);
 
 		.one_of_two {
-			
+			@include span-columns(6,12);
+			&:nth-child(2n) { @include omega; }
+		}
+
+		.facebook_share
+		{
+			@include span-columns(4,10);
+			@include pre(1,10);
+		}
+
+		.twitter_share
+		{
+			@include span-columns(4 omega,10);
+			margin-right: 1em;
 		}
 	}
 }

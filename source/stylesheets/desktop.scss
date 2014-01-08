@@ -24,10 +24,7 @@ header {
 		}
 
 
-		.three_of_six {
-			@include span-columns(1,2);
-			&:nth-child(2n) { @include omega; }
-		}
+		
 	}
 }
 

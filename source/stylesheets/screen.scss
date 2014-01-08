@@ -14,9 +14,9 @@ header
 		padding-bottom: 27px;
 
 		.one_of_two {
-			@include span-columns(1,1);
-			
+			@include span-columns(1,1);	
 		}
+
 
 	}
 }
