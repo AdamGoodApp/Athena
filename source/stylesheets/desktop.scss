@@ -1,0 +1,27 @@
+@import "base";
+/* Desktop layout overrides */
+header
+{
+	// background-color: #666;
+	// height: 100px;
+
+	.header-inner
+	{
+		@include container($desktop);
+	}
+}
+
+.page
+{
+	@include at-breakpoint($desktop) 
+	{
+	    @include container;
+	    @include susy-grid-background;
+
+	    .full-width .one_of_three
+	    {
+	    	@include span-columns(4,12);
+	    	&:nth-child(3n) { @include omega; }
+	    }
+	}
+}

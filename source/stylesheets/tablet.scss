@@ -1,0 +1,43 @@
+@import "base";
+/* Tablet layout overrides */
+
+header
+{
+	// background-color: #666;
+	// height: 100px;
+
+	.header-inner
+	{
+		@include container($tablet);
+	}
+}
+
+.page
+{
+	@include at-breakpoint($tablet) 
+	{
+	    @include container;
+	    @include susy-grid-background;
+
+	    .one_of_three
+	    {
+	    	/* tells this class to cover 5 of 10 total columns */
+	    	@include span-columns(5,10);
+	    	/* this tells the 2nd instance of this class to sit flush to the right edge of the grid (and to remove the right margin) */
+	    	&:nth-child(2n) { @include omega; }
+	    }
+
+	    footer .one_of_six
+		{
+			/* even though tablet has 10 columns can tell this element to span 1 of 6*/
+			@include span-columns(1,6);
+			&:nth-child(6n) { @include omega; }
+		}
+
+		.full-width .one_of_ten
+	    {
+	    	@include span-columns(1,10);
+	    	&:nth-child(10n) { @include omega; }
+	    }
+	}
+}

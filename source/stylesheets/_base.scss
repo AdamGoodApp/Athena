@@ -1,0 +1,24 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "susy";
+
+
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+
+//mobile first - so default layout is 6 columns
+$total-columns  : 6;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+//will turn this off for production code but usefull for example code
+$show-grid-backgrounds  : false;
+
+
+//these are the othe breakpoints
+$tablet: 760px 10;
+$desktop: 960px 12;

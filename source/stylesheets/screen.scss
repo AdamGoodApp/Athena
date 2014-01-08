@@ -1,0 +1,87 @@
+@import "base";
+@import "compass/reset";
+@import "compass/css3";
+
+header
+{
+	background-color: #206db2;
+	height: 79px;
+
+	.header-inner
+	{
+		@include container;
+
+		.one_of_two {
+			@include span-columns(5,10);
+			background-color: red;
+		}
+
+	}
+}
+
+footer {
+	background-color: #666;
+	height: 100px;
+	@include container;
+}
+
+.page 
+{
+	/* This is the mobile layout */
+	@include container;
+
+	/* Will remove for production code */
+	@include susy-grid-background;
+
+	background-color: #fff;
+
+	nav
+	{
+		background-color: none;
+		height: 50px;
+	}
+
+	.full-width
+	{
+		overflow: hidden;
+		background-color: #444;
+	}
+
+	.one_of_three
+	{
+		min-height: 400px;
+		background-color: #999;
+		margin-bottom: 1em;
+	}
+
+	.one_of_six
+	{
+		@include span-columns(3,6);
+	}
+
+	.one_of_ten
+	{
+		background-color: #222;
+		color: #fff;
+		@include span-columns(1,5);
+		&:nth-child(5n) { @include omega; }
+		height: 50px;
+	}
+
+	.carousel
+	{
+		height: 300px;
+		background-color: #fff;
+	}
+
+	.link
+	{
+		background-color: #fff;
+		height: 30px;
+		width: 100%;
+		padding: 4px;
+		float: left;
+		clear: both;
+	}
+
+}
