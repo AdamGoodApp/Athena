@@ -13,6 +13,7 @@ header
 
 		.one_of_two {
 			@include span-columns(5,10);
+			&:nth-child(2n) { @include omega; }
 			background-color: red;
 		}
 
