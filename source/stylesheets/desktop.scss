@@ -10,6 +10,19 @@ header {
 			@include span-columns(6,12);
 			&:nth-child(2n) { @include omega; }
 		}
+
+		.facebook_share
+		{
+			@include span-columns(3,10);
+			@include pre(3,10);
+		}
+
+		.twitter_share
+		{
+			@include span-columns(3 omega,10);
+		}
+
+
 		.three_of_six {
 			@include span-columns(1,2);
 			&:nth-child(2n) { @include omega; }
