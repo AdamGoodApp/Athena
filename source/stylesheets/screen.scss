@@ -12,8 +12,7 @@ header
 		@include container;
 
 		.one_of_two {
-			@include span-columns(5,10);
-			&:nth-child(2n) { @include omega; }
+			@include span-columns(1,1);
 			background-color: red;
 		}
 

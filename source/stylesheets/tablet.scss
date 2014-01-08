@@ -9,6 +9,11 @@ header
 	.header-inner
 	{
 		@include container($tablet);
+
+		.one_of_two {
+			@include span-columns(1,1);
+			background-color: red;
+		}
 	}
 }
 

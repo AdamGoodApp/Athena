@@ -8,6 +8,12 @@ header
 	.header-inner
 	{
 		@include container($desktop);
+
+		.one_of_two {
+			@include span-columns(6,12);
+			&:nth-child(2n) { @include omega; }
+			background-color: red;
+		}
 	}
 }
 
