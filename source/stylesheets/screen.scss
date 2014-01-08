@@ -5,15 +5,17 @@
 header
 {
 	background-color: #206db2;
-	height: 79px;
+	
 
 	.header-inner
 	{
 		@include container;
+		padding-top: 27px;
+		padding-bottom: 27px;
 
 		.one_of_two {
 			@include span-columns(1,1);
-			background-color: red;
+			
 		}
 
 	}
@@ -24,6 +26,39 @@ footer {
 	height: 100px;
 	@include container;
 }
+
+.navigation_wrapper {
+			background-color: #044177
+		}
+
+		.navigation {
+			overflow: hidden;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .page 
 {

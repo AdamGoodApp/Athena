@@ -1,21 +1,41 @@
 @import "base";
 /* Tablet layout overrides */
 
-header
-{
-	// background-color: #666;
-	// height: 100px;
+header {
 
 	.header-inner
 	{
 		@include container($tablet);
 
 		.one_of_two {
-			@include span-columns(1,1);
-			background-color: red;
+			
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .page
 {

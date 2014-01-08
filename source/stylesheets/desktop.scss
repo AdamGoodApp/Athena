@@ -1,9 +1,6 @@
 @import "base";
 /* Desktop layout overrides */
-header
-{
-	// background-color: #666;
-	// height: 100px;
+header {
 
 	.header-inner
 	{
@@ -12,7 +9,10 @@ header
 		.one_of_two {
 			@include span-columns(6,12);
 			&:nth-child(2n) { @include omega; }
-			background-color: red;
+		}
+		.three_of_six {
+			@include span-columns(1,2);
+			&:nth-child(2n) { @include omega; }
 		}
 	}
 }
